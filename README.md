@@ -1,7 +1,9 @@
 # asciidocker
-Simple docker build that packages all asciidoc-files into a docker container, converts them to html and runs nginx to show.
+Simple docker build that packages all asciidoc files into a docker container, converts them to html and runs nginx to show.
 
-Run like this
+Put your adoc-site in the same directry as this dockerfile.
+
+Build and run like this
 ```
 docker build -t asccidockersitename .
 docker run -it --rm -p 8080:80 asccidockersitename
