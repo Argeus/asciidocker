@@ -1,0 +1,11 @@
+= Här är min fräcka asciidoc-site
+
+== Funderingar
+Det här kan ju bli något. Vem vet?
+
+Inte jag iaf.
+
+
+link:another-page.html[En sida till]
+
+link:/docs/index.html[/docs]
