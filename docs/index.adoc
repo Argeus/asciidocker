@@ -1,6 +1,0 @@
-= Dokument
-
-.Här är en lista på alla dokument i denna fina katalog
-* Doc1
-* Doc2
-* Doc3
