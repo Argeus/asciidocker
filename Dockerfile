@@ -15,9 +15,11 @@ RUN apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && rm -rf 
 RUN gem install asciidoctor
 RUN rm -rf /var/www/html/* 
 
+COPY entrypoint.sh /
+
 #onbuild
 ONBUILD COPY . /var/www/html/
-ONBUILD RUN find /var/www/html/ -iname '*.adoc' -exec asciidoctor {} \;
 
 EXPOSE 80
-CMD "nginx"
+
+CMD "/entrypoint.sh"
